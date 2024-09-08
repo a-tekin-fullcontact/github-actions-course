@@ -5,7 +5,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    stesp:
+    steps:
         - name: Checkout Code
           uses: actions/checkout@4
         - name: Printinf folders
