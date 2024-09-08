@@ -25,4 +25,3 @@ jobs:
         run: |
           echo "This job is running on a MacOS runner."
           echo "RunnerOS: $RUNNER_OS"
-      

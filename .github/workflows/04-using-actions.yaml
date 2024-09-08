@@ -2,9 +2,14 @@ name: 04 - Using Action
 
 on: push
 
-job:
+jobs:
   build:
     runs-on: ubuntu-latest
+    stesp:
+        - name: Checkout Code
+          uses: actions/checkout@4
+        - name: Printinf folders
+          run: ls
 
     # 1. Install deps of our react application
     # 2. Execute automated tests
