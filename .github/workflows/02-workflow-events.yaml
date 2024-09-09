@@ -1,13 +1,9 @@
 name: 02 - Workflow Events
 
-<<<<<<< HEAD
 on:
   pull_request:
   workflow_dispatch:
     
-=======
-on: workflow_dispatch
->>>>>>> refs/remotes/origin/main
 
 jobs:
   echo:
