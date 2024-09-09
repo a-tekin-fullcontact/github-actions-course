@@ -1,11 +1,9 @@
 name: 01 - Building Blocks
 
-<<<<<<< HEAD
+
 on: 
   workflow_dispatch:
-=======
-on: workflow_dispatch
->>>>>>> refs/remotes/origin/main
+
 
 jobs:
   first_job:
