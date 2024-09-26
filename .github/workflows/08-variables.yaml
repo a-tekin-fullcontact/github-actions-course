@@ -39,18 +39,17 @@ jobs:
             echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
     echo-prod:
       runs-on: ubuntu-latest
-      environment:
-        steps:
-          - name: Print Prod Variables
-            run:  |
-              echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
-              echo "Environmnet var: ${{ vars.TARGET_VAR }}"
+      environment: prod
+      steps:
+        - name: Print Prod Variables
+          run:  |
+            echo "Repo var: ${{ vars.REPOSITORY_VAR }}"
+            echo "Environmnet var: ${{ vars.TARGET_VAR }}"
     echo-undefined:
       runs-on: ubuntu-latest
-      environment:
-        steps:
-          - name: Print Prod Variables
-            run:  |
-              echo "Org var: ${{ env.UNDEFINED_VAR_WITH_DEFAULT }}"
+      steps:
+        - name: Print Prod Variables
+          run:  |
+            echo "Org var: ${{ env.UNDEFINED_VAR_WITH_DEFAULT }}"
 
 
