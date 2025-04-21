@@ -17,7 +17,7 @@ jobs:
       - name: failed step
         run: echo "I will fail"
 
-      - anem: Say goodbye
+      - name: Say goodbye
         run: echo "Goodbye"
   
 
