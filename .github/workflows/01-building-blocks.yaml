@@ -19,6 +19,12 @@ jobs:
 
       - name: Say goodbye
         run: echo "Goodbye"
+
+      - name: Execute multi line
+        run: |
+          echo "I am"
+          echo "a multi-line"
+          echo "script"
   
 
     
