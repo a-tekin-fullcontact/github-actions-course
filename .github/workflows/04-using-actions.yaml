@@ -1,11 +1,15 @@
 name: 04 - Using Action
 
 
-on: workflow_dispatch
+on: push
 
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: 04-using-actions/react-app
+        
     runs-on: ubuntu-latest
     steps:
         - name: Checkout code
@@ -16,10 +20,8 @@ jobs:
             node-version: 20.x
         - name: Install Dependencies
           run: npm ci
-          working-directory: 04-using-actions/react-app
         - name: Run Unit Tests
           run: npm run test
-          working-directory: 04-using-actions/react-app
 
     # 0. checkout the code from the repository
     # 1. Install deps of our react application
