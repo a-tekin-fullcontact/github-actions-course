@@ -11,4 +11,15 @@ jobs:
       - name: Display Information
         run:  |
           echo "Event name: ${{ github.event_name }}"
-          
+          echo "Ref: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
+          echo "Actor: ${{ github.actor}}"
+          echo "Workflow: ${{ github.workflow}}"
+          echo "Rub ID: ${{ github.run_id}}"
+          echo "Run Numbe: ${{ github.run_number}}"
+
+      - name: Retrieve Variable
+        env:
+          MY_VAR: hello world
+        run: |
+          echo "MY_VAR: $MY_VAR"
