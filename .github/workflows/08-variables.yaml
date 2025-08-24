@@ -24,7 +24,7 @@ jobs:
           echo "Job env var: $JOB_VAR"
           echo "Job env var: ${{ env.JOB_VAR }}"
           echo "Workflow env var: $WORKFLOW_VAR"
-      - name:
+      - name: print step env variables
         env:
           OVERRITTEN: "I have been overritten at the step level"
           run: |
