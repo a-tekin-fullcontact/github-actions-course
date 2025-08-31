@@ -18,7 +18,7 @@ jobs:
           EOF
 
       - name:
-        if: ${{ $cancelled() && contains(github.event.pull_request.title, 'fix') }}
+        if: ${{ cancelled() && contains(github.event.pull_request.title, 'fix') }}
         run: echo "I am a bug fix"
 
       - name: sleep for 20 seconds
