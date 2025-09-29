@@ -34,7 +34,7 @@ jobs:
         id: cache
         with:
           path: 13-caching/react-app/node_modules
-          key: deps-node-modules-${{ hahsFiles('13-caching/reat-app/package-lock.json') }}
+          key: deps-node-modules-${{ hashFiles('13-caching/reat-app/package-lock.json') }}
       - name: Install dependencies
         if: steps.cache.outputs.cache-hot != 'true'
         run: npm ci
